@@ -15,4 +15,6 @@ docker volume rm $(docker volume ls -q)
 ```
 docker exec -it <id z docker ps> bash
 psql -d loty_db -U loty
+
+docker exec -it $(sudo docker ps -aqf "name=loty_psql") bash
 ```
